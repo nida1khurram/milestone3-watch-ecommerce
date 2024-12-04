@@ -13,9 +13,9 @@ export default function Hero6() {
 
   {/* text */}
     <div className=''>
-         <h2 className={`${taviraj.className} text-[36px] text-mygray ml-[110px] `}> <span className='underline underline-offset-8'>Testimo</span>nials</h2>
+         <h2 className={`${taviraj.className} text-[28px] sm:text-[32px] lg:text-[36px] text-mygray ml-5 md:ml-[110px] `}> <span className='underline underline-offset-8'>Testimo</span>nials</h2>
     
-      <p className={`${taviraj.className} text-pretty w-[511px] h-[130px] text-[16px] text-mygray ml-[110px] mt-10`}>
+      <p className={`${taviraj.className} text-pretty w-[300px] md:w-[511px] md:h-[130px] text-[16px] text-mygray ml-5 md:ml-[110px] mt-10`}>
       Loving my new KAILI watch from @matoa_id, the first ever Indonesian watch local brand that uses wood as their main material. Like any other Matoa products, KAILI is inspired by Indonesian heritage.</p>
 
       <p className={`${taviraj.className} text-2xl  ml-[110px] mt-5 text-mygray`}>Gita Savitri</p>

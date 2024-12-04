@@ -5,11 +5,11 @@ const taviraj = Taviraj({ subsets: ["latin"], weight: ["400", "700"] });
 export default function Hero5() {
   return (
     <section className=" body-font my-32">
-      <div className="grid grid-cols-3 px-4">
+      <div className="grid md:grid-cols-3 px-4">
         {/* 1 */}
         <div>
           <h2
-            className={`${taviraj.className} text-[36px] text-mygray ml-1 mb-12`}
+            className={`${taviraj.className} text-3xl md:text-[36px] text-mygray ml-1 mb-12`}
           >
             {" "}
             <span className="underline underline-offset-8">Map</span>le Series
@@ -34,7 +34,7 @@ export default function Hero5() {
                 Way Kambas Maple
               </h3>
               <p
-                className={`${taviraj.className} text-[28px] text-[#222222] ml-6`}
+                className={`${taviraj.className} text-lg md:text-[28px] text-[#222222] ml-6`}
               >
                 {" "}
                 Rp 1.280.000
@@ -60,7 +60,7 @@ export default function Hero5() {
                 Kaili
               </h3>
               <p
-                className={`${taviraj.className} text-[28px] text-[#222222] ml-6`}
+                className={`${taviraj.className} text-lg md:text-[28px] text-[#222222] ml-6`}
               >
                 {" "}
                 Rp 950.000
@@ -86,7 +86,7 @@ export default function Hero5() {
                 Sunda
               </h3>
               <p
-                className={`${taviraj.className} text-[28px] text-[#222222] ml-6`}
+                className={`${taviraj.className} text-lg md:text-[28px] text-[#222222] ml-6`}
               >
                 Rp 1.170.000
               </p>
@@ -98,7 +98,7 @@ export default function Hero5() {
 
         <div>
           <h2
-            className={`${taviraj.className} text-[36px] text-mygray ml-1 mb-12 `}
+            className={`${taviraj.className} text-3xl md:text-[36px] text-mygray ml-1 mb-12 `}
           >
             {" "}
             <span className="underline underline-offset-8">Ebo</span>ny Series
@@ -128,7 +128,7 @@ export default function Hero5() {
                 Rp 1.280.000
               </p>
               <p
-                className={`${taviraj.className} text-[28px] text-[#222222] ml-6`}
+                className={`${taviraj.className} text-lg md:text-[28px] text-[#222222] ml-6`}
               >
                 {" "}
                 Rp 960.000
@@ -154,7 +154,7 @@ export default function Hero5() {
                 Mori
               </h3>
               <p
-                className={`${taviraj.className} text-[28px] text-[#222222] ml-6`}
+                className={`${taviraj.className} text-lg md:text-[28px] text-[#222222] ml-6`}
               >
                 {" "}
                 Rp 950.000
@@ -180,7 +180,7 @@ export default function Hero5() {
                 Alor
               </h3>
               <p
-                className={`${taviraj.className} text-[28px] text-[#222222] ml-6`}
+                className={`${taviraj.className} text-lg md:text-[28px] text-[#222222] ml-6`}
               >
                 {" "}
                 Rp 1.170.000
@@ -193,7 +193,7 @@ export default function Hero5() {
 
         <div>
           <h2
-            className={`${taviraj.className} text-[36px] text-mygray ml-1 mb-12 `}
+            className={`${taviraj.className} text-3xl md:text-[36px] text-mygray ml-1 mb-12 `}
           >
             {" "}
             <span className="underline underline-offset-8">Fea</span>tured
@@ -217,7 +217,7 @@ export default function Hero5() {
                 Sikka (Ebony & Maple)
               </h3>
               <p
-                className={`${taviraj.className} text-[28px] text-[#222222] ml-6`}
+                className={`${taviraj.className} text-lg md:text-[28px] text-[#222222] ml-6`}
               >
                 {" "}
                 Rp 1.198.000
@@ -243,7 +243,7 @@ export default function Hero5() {
                 Lore Walnut
               </h3>
               <p
-                className={`${taviraj.className} text-[28px] text-[#222222] ml-6`}
+                className={`${taviraj.className} text-lg md:text-[28px] text-[#222222] ml-6`}
               >
                 Rp 1.280.000
               </p>
@@ -268,7 +268,7 @@ export default function Hero5() {
                 Way Kambas Limited Edition
               </h3>
               <p
-                className={`${taviraj.className} text-[28px] text-[#222222] ml-6`}
+                className={`${taviraj.className} text-lg md:text-[28px] text-[#222222] ml-6`}
               >
                 {" "}
                 Rp 1.170.000
@@ -280,7 +280,7 @@ export default function Hero5() {
       {/*  */}
 <div className="flex items-center justify-center my-4  mx-auto">
    <div className="flex-grow h-px bg-gray-400"></div>
-    <button className={`${taviraj.className} w-[272px] h-[68px] text-[20px] hover:text-2xl mx-4 px-4 py-2 hover:border-2 border border-red-500 text-red-500 `}> 
+    <button className={`${taviraj.className} md:w-[272px] md:h-[68px] text-[20px] hover:text-2xl mx-4 px-4 py-2 hover:border-2 border border-red-500 text-red-500 `}> 
       See More </button> <div className="flex-grow h-px bg-gray-400"></div> </div>
 {/*  */}
     </section>

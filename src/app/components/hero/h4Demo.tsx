@@ -1,4 +1,5 @@
 
+
 import React from "react";
 import Link from "next/link";
 import { Taviraj } from "next/font/google";
@@ -6,9 +7,9 @@ import H4Pic from "./h4Pic";
 
 const taviraj = Taviraj({ subsets: ["latin"], weight: ["400", "700"] });
 
-export default function Hero4() {
+export default function Hero4Demo() {
   return (
-    <div className="my-16 px-4 sm:px-6 lg:px-10 ">
+    <div className="my-16 px-4 sm:px-6 lg:px-10">
       {/* Title */}
       <h1
         className={`${taviraj.className} mb-12 sm:mb-20 text-[28px] sm:text-[32px] lg:text-[36px] text-mygray`}
@@ -17,9 +18,9 @@ export default function Hero4() {
       </h1>
 
       {/* Content Section */}
-      <div className="flex flex-col md:flex-row ">
+      <div className="flex flex-col md:flex-row gap-6">
         {/* Text Section */}
-        <div className="md:w-1/3 lg:ml-6">
+        <div className="md:w-1/2 lg:ml-6">
           <p className={`${taviraj.className} text-[18px] sm:text-[20px] text-mygray`}>
             Where To Travel
           </p>
@@ -38,7 +39,7 @@ export default function Hero4() {
         </div>
 
         {/* Picture Section */}
-        <div className="mt-20">
+        <div className="md:w-1/2 mt-20">
           
 
 

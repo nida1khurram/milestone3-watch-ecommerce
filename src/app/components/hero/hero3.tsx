@@ -6,9 +6,9 @@ import {Taviraj} from "next/font/google"
 const taviraj = Taviraj({subsets:['latin'],weight: ['400', '700'],})
 export default function Hero3() {
   return (
-    <div className='my-20'>
+    <div className='my-20 mx-auto'>
         <h1 className={`${taviraj.className} mb-28 text-[36px] text-mygray ml-5 `}> <span className='underline underline-offset-8'> Monthl</span>y Deals</h1>
-        <div className='grid grid-cols-4 ml-10 gap-3'>
+        <div className='grid  md:grid-cols-4 ml-10 gap-10 md:gap-3 mx-auto'>
             {/* 1 */}
             <div className='bg-white max-w-[250px]'>
             <Image 

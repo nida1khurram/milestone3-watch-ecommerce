@@ -11,7 +11,7 @@ const H6Pic = () => {
     <div className="relative flex mt-20">
         
       <div className="absolute inset-0">
-      <div className='w-[515px] h-[300px]  bg-myPink mt-[-100px] '>
+      <div className='md:w-[515px] md:h-[300px]  bg-myPink mt-[-100px] '>
       <Image 
     width={736} height={264} alt="w1" src={'/images/hero/v.png'}
     className=" mt-[-20px]  absolute animate-pulse"/>
@@ -31,7 +31,7 @@ const H6Pic = () => {
           width={511}
           height={321}
           alt="hero1"
-          className="ml-40 mt-0 
+          className="ml-10 md:ml-40 mt-0 w-[250px] md:w-[511px] h-[250px] md:h-[321px]
           transition-all duration-1000 ease-in-out hover:scale-95 hover:shadow-[0_0_8px_6px_rgb(216,71,39)]"
         />
         <div className='flex ml-40'>
@@ -42,6 +42,6 @@ const H6Pic = () => {
       </div>
     </div>
   );
-};
+}; 
 
 export default H6Pic;

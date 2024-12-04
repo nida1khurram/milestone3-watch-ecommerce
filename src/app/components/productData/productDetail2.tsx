@@ -8,8 +8,8 @@ const taviraj = Taviraj({subsets:['latin'],weight: ['400', '700'],})
 export default function ProductDetail2() {
   return (
     <div className='my-20'>
-    <h1 className={`${taviraj.className} mb-28 text-[36px] text-mygray ml-5 `}> <span className='underline underline-offset-8'>Relate</span> Products</h1>
-    <div className='grid grid-cols-4 ml-10 gap-3'>
+    <h1 className={`${taviraj.className} mb-10 md:mb-20 text-[36px] text-mygray ml-5 `}> <span className='underline underline-offset-8'>Relate</span> Products</h1>
+    <div className='grid md:grid-cols-4 ml-10 gap-8 md:gap-3'>
         {/* 1 */}
         {/*  */}
         <div className='bg-white max-w-[255px] max-h-[403px] relative '>

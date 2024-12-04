@@ -1,59 +1,63 @@
-import React from 'react'
+
+import React from 'react';
 import { CiShoppingCart } from "react-icons/ci";
-import Link from 'next/link'
-import {Taviraj} from "next/font/google"
-import Image from 'next/image'
+import Link from 'next/link';
+import { Taviraj } from "next/font/google";
+import Image from 'next/image';
 
 import AddToCartBtn from '../components/cart/addToCartBtn';
 import ProductDetail from '../components/productData/productDetail';
 import ProductDetail2 from '../components/productData/productDetail2';
-const taviraj = Taviraj({subsets:['latin'],weight: ['400', '700'],})
-export default function Page() {
+
+const taviraj = Taviraj({ subsets: ['latin'], weight: ['400', '700'] });
+
+export default function PageDemo() {
   return (
     <>
-
-
-    <div className='w-full md:w-[1440px] h-full relative mx-auto py-3 md:py-8 mb-20 grid md:grid-cols-2
-    '>
-        <div className='w-full h-[460px] md:w-[600px] md:h-[548px] bg-myPink'>
- {/* img start */}
+      <div className="sm:w-[100%] md:w-[1440px] mx-auto py-8 mb-20 grid md:grid-cols-2 gap-8 px-4 md:px-0">
+        {/* Left Section */}
+        <div className="relative w-full h-auto md:w-[600px] md:h-[548px] bg-myPink">
+          {/* Side Images */}
           <Image
             src="/images/cart/p1.png"
-            width={70}
-            height={101}
+            width={50}
+            height={75}
             alt="hero1"
-            className="ml-3 md:ml-40 absolute mt-8 hover:animate-ping "
-          /> 
-           <Image
+            className="absolute left-10 md:left-40 top-8 hover:animate-ping"
+          />
+          <Image
             src="/images/cart/p2.png"
-            width={70}
-            height={101}
-            alt="hero1"
-            className="ml-3 md:ml-40 absolute mt-40 hover:animate-ping"
-          /> 
-           <Image
+            width={50}
+            height={75}
+            alt="hero2"
+            className="absolute left-10 md:left-40 top-28 hover:animate-ping"
+          />
+          <Image
             src="/images/cart/p3.png"
-            width={70}
-            height={101}
-            alt="hero1"
-            className="ml-3 md:ml-40 absolute mt-72 hover:animate-ping"
-          /> 
-           <Image
+            width={50}
+            height={75}
+            alt="hero3"
+            className="absolute left-10 md:left-40 top-52 hover:animate-ping"
+          />
+          <Image
             src="/images/cart/p4.png"
-            width={70}
-            height={101}
-            alt="hero1"
-            className="ml-3 md:ml-40 absolute mt-96 hover:animate-ping"
-          /> 
-  
- <Image 
-    width={325} height={467} alt="w1" src={'/images/hero/w1.png'}
-    className="w-[220px] h-[300px] md:w-[325px] md:h-[467px] absolute mt-24 md:mt-[30px] ml-24 md:ml-[350px] transition-all duration-1000 ease-in-out hover:scale-105"/>
+            width={50}
+            height={75}
+            alt="hero4"
+            className="absolute left-10 md:left-40 top-80 hover:animate-ping"
+          />
+          {/* Main Image */}
+          <Image
+            src="/images/hero/w1.png"
+            width={300}
+            height={400}
+            alt="main-product"
+            className="absolute top-[30px] left-[120px] md:top-[30px] md:left-[350px] transition-all duration-1000 ease-in-out hover:scale-105"
+          />
         </div>
 
-
- {/* Right Section */}
-   <div className="ml-4 md:ml-20 ">
+        {/* Right Section */}
+        <div className="md:ml-20 ">
           {/* Product Title */}
           <div className="pt-10">
             <h1 className={`${taviraj.className} text-[36px] md:text-[60px] text-mygray`}>
@@ -88,10 +92,10 @@ export default function Page() {
             {/* Add to Cart Button */}
             <AddToCartBtn />
 
-            <div className="flex md:w-[208px] md:h-[62px] bg-btn hover:bg-[#b84329] text-xl text-white">
+            <div className="flex w-[208px] h-[62px] bg-btn hover:bg-[#b84329] text-xl text-white">
               <Link href={'/'} className="inline-flex items-center mx-auto">
-                <CiShoppingCart className="w-[32px] h-[32px] " />
-                <span className={`${taviraj.className} mr-2 md:mr-0`}>Add to cart</span>
+                <CiShoppingCart className="w-[32px] h-[32px] mr-4" />
+                <span className={`${taviraj.className}`}>Add to cart</span>
               </Link>
             </div>
 
@@ -108,12 +112,11 @@ export default function Page() {
             </div>
           </div>
         </div>
-    </div>
+      </div>
 
-    <ProductDetail />
-    <ProductDetail2 />
-
+      {/* Product Details */}
+      <ProductDetail />
+      <ProductDetail2 />
     </>
-  )
+  );
 }
-
