@@ -7,12 +7,11 @@ import { AiOutlineLeft } from "react-icons/ai";
 import { AiOutlineRight } from "react-icons/ai";
 import {Taviraj} from "next/font/google"
 import Hero2 from './hero2';
-import Hero3 from './hero3';
 import Hero4 from './hero4';
 import Hero5 from './hero5';
 import Hero6 from './hero6';
 import Hero7 from './hero7';
-import Hero4Demo from './h4Demo';
+import ProductPage from '@/app/product/page';
 const taviraj = Taviraj({subsets:['latin'],weight: ['400', '700'],})
 export default function Hero() {
   return (
@@ -68,7 +67,9 @@ export default function Hero() {
             <div className="flex items-center justify-center w-[208px] h-[62px] bg-btn hover:bg-[#b84329] text-white text-xl">
               <Link href={"/product"} className="flex items-center">
                 <CiShoppingCart className="w-[32px] h-[32px] mr-3" />
-                <span className={`${taviraj.className}`}>Add to cart</span>
+                <span className={`${taviraj.className}`}>
+                  <Link href={'/cart'} >Add to cart</Link>
+                </span>
               </Link>
             </div>
 
@@ -99,7 +100,8 @@ export default function Hero() {
     </div>
   </div>
    <Hero2 />
- <Hero3 />
+
+ <ProductPage />
  <Hero4 />
  <Hero5 />
  <Hero6 />

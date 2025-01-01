@@ -9,6 +9,7 @@ const nunito = Nunito({ subsets: ['latin'] });
 
 export default function Hero2() {
   return (
+    <section id='hero2'>
     <div className="mx-auto max-w-[1440px] grid sm:grid-cols-1 md:grid-cols-2 gap-10 md:gap-28 px-4 sm:px-6 lg:px-20 py-10">
       {/* Luxurious Eyewear Section */}
       <div className="w-[340px] h-[300px] md:w-[540px] md:h-[270px] bg-white flex flex-col justify-center items-start  pt-6 px-10 shadow-md rounded-lg">
@@ -66,5 +67,6 @@ export default function Hero2() {
         </div>
       </div>
     </div>
+    </section>
   );
 }
