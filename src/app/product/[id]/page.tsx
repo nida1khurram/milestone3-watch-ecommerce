@@ -100,7 +100,7 @@ export default function ProductPage({ params }: ProductPageProps) {
           <p className="text-green-600 mb-4">{product.discount}</p>
           <div className="flex items-center gap-4 mb-4">
             <span className="text-2xl font-bold">${product.price.toFixed(3)}</span>
-            <span className="text-lg text-gray-500 line-through">${product.oldprice.toFixed(3)}</span>
+            <span className="text-lg text-gray-500 line-through"> ${product.oldprice.toFixed(3)}</span>
           </div>
           <p className="text-gray-600 mb-6">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -114,7 +114,7 @@ export default function ProductPage({ params }: ProductPageProps) {
           <button
             className="bg-green-600 text-white px-6 py-2 rounded-lg hover:bg-green-700 transition-colors ml-5"
           >
-           <Link href={'/cart'} className=''> Your Cart</Link>
+           <Link href={'/cart'} className=''> Your Shopping Cart</Link>
           </button>
           
         </div>

@@ -169,10 +169,10 @@
             className={`${taviraj.className} text-myLightGray relative inline-block`}
           >
             <span className="absolute inset-0 border-b-2 border-red-600 transform -translate-y-1/2"></span>{" "}
-            Rp {product.price}
+            Rp  {product.oldprice}
           </p>
           <h3 className={`${taviraj.className} text-2xl text-mygray`}>
-            Rp {product.oldprice}
+            Rp {product.price}
           </h3>
         </div>
       </div>
